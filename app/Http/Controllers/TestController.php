@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function soal_1()
+    public function soal_one()
     {
         $nilai = 20;
         for ($i = 1; $i <= $nilai; $i++) {
@@ -20,7 +20,7 @@ class TestController extends Controller
                 echo $i."\n";
             }
         }
-        return Inertia::render('Dashboard', [
+        return Inertia::render('SoalOne', [
             'nilai' => $nilai
         ]);
     }
